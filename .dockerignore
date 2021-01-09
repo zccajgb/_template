@@ -1,0 +1,11 @@
+output/**/*
+output/*
+output
+.vs/**/*
+.vs
+.vscode/**/*
+.vscode
+tests
+tests/**/*
+venv
+venv/**/*

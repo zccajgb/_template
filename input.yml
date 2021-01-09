@@ -1,0 +1,50 @@
+Virus:
+  radius: 50e-9
+  virus_concentration: 100e-9 #https://doi.org/10.1038/s41586-020-2179-y
+  number_of_spikes: 15 #virus has 45 spikes but lets assume only 15 are accessible
+  spike_length: 14.5e-9 #https://doi.org/10.1128/JVI.77.16.8801-8811.2003
+
+Proteoglycan:
+  binding_energy : -11.981 #kd= 626e-6 #https://doi.org/10.1101/2020.05.17.100537
+#  binding_energy : -5 #kd= 626e-6 #https://doi.org/10.1101/2020.05.17.100537
+
+  number_of_binding_sites_per_chain: 5
+  number_of_chains_per_receptor: 6
+  # ~ 100 monomers, each around 2nm long
+  # number_of_units_per_chain: 200
+  number_of_units_per_chain: 25 #ms length = 484, divided by kuhn length^2    https://doi.org/10.1002/app.28951
+  number_of_proteoglycan_chains: 150
+
+ACE2:
+  mean_binding_distance: 2.7e-9
+  branch_length: 7e-9
+  number_of_branches: 2
+#  binding_energy: -18.8987 #kd: 6.2e-9 #https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7048180/ #
+  binding_energy: -10
+  number_of_receptors: 1
+  number_of_binding_sites: 3
+  number_of_glycans: 1 #try from 1 to 4
+  include_repulsion: True
+
+TMPRSS2:
+  mean_binding_distance: 1
+  branch_length: 1
+  number_of_branches: 1
+#  binding_energy: -18.8987 #kd: 6.2e-9 #https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7048180/ #
+  binding_energy: -10
+  number_of_receptors: 1
+  number_of_binding_sites: 1
+  number_of_glycans: 1 #try from 1 to 4
+  include_repulsion: False
+
+Insertion:
+  hs_kuhn_length: 9e-9 #https://link.springer.com/content/pdf/10.1007/s00249-003-0316-9.pdf
+#  hs_kuhn_length: 2.67e-9  #https://doi.org/10.1002/app.28951
+  receptor_tether_length: 4e-9
+  cell_size: 10000e-18 #currently radius^2
+
+
+BindingProbability:
+  receptor_initial_probability: [0.5, 0.5]
+  proteoglycan_initial_probability: [0.5, 0.5]
+  tolerance: 0.001

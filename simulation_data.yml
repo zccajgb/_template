@@ -1,0 +1,58 @@
+receptor_types: "ACE2"
+number_of_receptors:
+  min: 3
+  max: 3
+  step: 1
+receptor_binding_energy:
+  min: -20
+  max: -15
+  step: 5
+hs_binding_energy:
+  min: -5
+  max: -15
+  step: 11
+fraction_binding_sites_per_chain:
+  min: 0.1
+  max: 1
+  step: 10
+number_of_hs_chains:
+  min: 1
+  max: 200
+  step: 200
+mean_binding_distance:
+  min: 1e-9
+  max: 10e-9
+  step: 5
+branch_length:
+  min: 5e-9
+  max: 10e-9
+  step: 5
+receptor_tether_length:
+  min: 2e-9
+  max: 10e-9
+  step: 5
+radius:
+  min: 40e-9
+  max: 60e-9
+  step: 101
+concentration:
+  min: 1e-9
+  max: 200e-9
+  step: 4
+number_of_spikes:
+  min: 5
+  max: 25
+  step: 21
+chain_length:
+  min: 20e-9
+  max: 80e-9
+  step: 61
+hs_kuhn_length:
+  min: 2e-9
+  max: 18e-9
+  step: 5
+number_of_branches:
+  min: 1
+  max: 4
+  step: 4
+other: ""
