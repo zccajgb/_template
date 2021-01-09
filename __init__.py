@@ -1,14 +1,10 @@
 import time
 
 from helpers.data_helper import save_data
-from models.multi_receptors_data import MultipleReceptorsData
-from models.multiple_receptors_simulation_data import MultipleReceptorsSimulationData
-from plot import plot
-from helpers.updaters import *
 # from helpers.multiple_receptor_updaters import *
 # from helpers.multiple_receptor_results_helper import *
 from helpers.results_helper import *
-from master.master import load_data, load_multiple_receptor_data
+from master.master import load_data
 from functools import partial
 from models.combined_data import CombinedData
 import logging
